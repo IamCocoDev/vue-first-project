@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="todo"  v-bind:class="{completed: todoi.completed}">
     <div class="todo-body">
-      <input type="checkbox">
+      <input type="checkbox"  v-bind:checked="todoi.completed ? 'checked': none">
       {{ todoi.title }}
     </div>
     <div class="todo-actions">
